@@ -27,7 +27,7 @@ app.use(express.json());
 //=================================================
 // Routing
 //=================================================
-require("./routing/apiRoutes")(app);
+//require("./routing/apiRoutes")(app);
 require("./routing/htmlRoutes")(app);
 
 
