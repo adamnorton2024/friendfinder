@@ -41,12 +41,4 @@ var friendsArray = [
 
 ];
 
-var user = {
-    name: "",
-    photo: "",
-    scores: []
-};
-
-
 module.exports = friendsArray;
-module.exports = user;
