@@ -1,6 +1,6 @@
 // Load Data
 //===========================================
-var friends = require("../data/friends.js");
+var friends = require("../data/friends");
 
 
 
@@ -16,13 +16,16 @@ module.exports = function(app){
     });
 
     app.post("/api/friends", function (req, res) {
+
         var friend = req.body;
         var match;
         var lowestDiff = 100;
         for (var i = 0; i < friends.length; i++) {
+            
             var diff = 0;
-            for (var j; j < friends.score[j]; j++) {
-                diff += Math.abs(friend.score[j] - friends[i].score[j]);
+            for (var j = 0; j < friends[i].scores.length; j++) {
+                
+                diff += Math.abs(friend.scores[j] - friends[i].scores[j]);
             }
             if (diff < lowestDiff) {
                 lowestDiff = diff;
