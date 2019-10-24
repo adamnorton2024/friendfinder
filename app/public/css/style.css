@@ -1,0 +1,28 @@
+body, html {
+    background-color: black;
+    color: white;
+    overflow: auto;
+    overflow-x: hidden;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-position: center;
+    }
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+        font-size: 5em;
+        text-shadow: 2px 2px black;
+    }
+
+    a, p, h5 {
+        color: white;
+        text-shadow: 1px 1px black;
+    }
+
+    a:hover {
+        color: yellow;
+    }
