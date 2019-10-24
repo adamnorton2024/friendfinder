@@ -23,6 +23,27 @@ body, html {
         text-shadow: 1px 1px black;
     }
 
+    h4 {
+        margin-bottom: .75em;
+    }
+
+    .survey {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+
     a:hover {
         color: yellow;
+    }
+
+    .chosen-select, .modal-text {
+        color: black;
+    }
+
+    #btn-submit {
+        padding: 1em;
     }

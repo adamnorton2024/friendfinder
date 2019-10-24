@@ -17,50 +17,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
-    <style>
-        body,
-        html {
-            background-color: black;
-            color: white;
-            overflow: auto;
-            overflow-x: hidden;
-            background-image: url(https://github.com/adamnorton2024/friendfinder/blob/master/app/public/images/background.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            background-position: center;
-        }
-
-        img {
-            width: 300px;
-            height: auto;
-        }
-
-        .modal-text {
-            color: black;
-        }
-
-        .chosen-select {
-            color: black;
-        }
-    
-        a {
-            color: white;
-            text-shadow: 1px 1px black;
-        }
-    
-        a:hover {
-            color: yellow;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
 
     <div class="container">
+    <div class="container survey">
 
         <h2>Survey Questions</h2>
         <hr>
@@ -193,7 +157,7 @@
         <br>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        <button type="submit" class="btn btn-danger btn-lg" id="submit"><i class="fa fa-check-circle"
                 aria-hidden="true"></i>
             Submit</button>
 
@@ -201,10 +165,11 @@
         <footer class="footer">
             <div class="container">
                 <p><a href="/api/friends">API Friends List</a> | <a
-                        href="https://github.com/adamnorton2024/friendfinder">GitHub Repo</a></p>
+                        href="https://github.com/adamnorton2024/friendfinder">GitHub Repo</a> | <a href="/">Home</a></p>
             </div>
         </footer>
 
+    </div>
     </div>
 
     <!-- Modal -->
@@ -219,7 +184,7 @@
                 </div>
                 <div class="modal-body modal-text">
                     <h2 id="match-name"></h2>
-                    <img id="match-img"
+                    <img class="img-fluid" id="match-img"
                         src="" alt="">
                 </div>
                 <div class="modal-footer  modal-text">
@@ -230,39 +195,39 @@
         </div>
     </div>
 
-    <script type="text/javascript">
+    <script type="text/javascript" src="./javascript/script.js">
 
-        $("#submit").on("click", function(event){
+        // $("#submit").on("click", function(event){
 
-            var friend = {
-                name: $("#name").val().trim(),
-                photo: $("#photo").val().trim(),
-                scores: [
-                    $("#q1").val().trim(),
-                    $("#q2").val().trim(),
-                    $("#q3").val().trim(),
-                    $("#q4").val().trim(),
-                    $("#q5").val().trim(),
-                    $("#q6").val().trim(),
-                    $("#q7").val().trim(),
-                    $("#q8").val().trim(),
-                    $("#q9").val().trim(),
-                    $("#q10").val().trim()
-                ]
-            };
+        //     var friend = {
+        //         name: $("#name").val().trim(),
+        //         photo: $("#photo").val().trim(),
+        //         scores: [
+        //             $("#q1").val().trim(),
+        //             $("#q2").val().trim(),
+        //             $("#q3").val().trim(),
+        //             $("#q4").val().trim(),
+        //             $("#q5").val().trim(),
+        //             $("#q6").val().trim(),
+        //             $("#q7").val().trim(),
+        //             $("#q8").val().trim(),
+        //             $("#q9").val().trim(),
+        //             $("#q10").val().trim()
+        //         ]
+        //     };
 
-            console.log(friend);
+        //     console.log(friend);
 
-            $.post("api/friends", friend, function(data){
-                if(data){
-                    var modal = $("#results-modal");
-                    modal.find("#match-name").text(data.name);
-                    modal.find("#match-img").attr("src", data.photo);
-                    modal.modal("show");
-                }
-            });
+        //     $.post("api/friends", friend, function(data){
+        //         if(data){
+        //             var modal = $("#results-modal");
+        //             modal.find("#match-name").text(data.name);
+        //             modal.find("#match-img").attr("src", data.photo);
+        //             modal.modal("show");
+        //         }
+        //     });
             
-        });
+        // });
 
 
 
