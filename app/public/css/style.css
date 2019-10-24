@@ -18,6 +18,13 @@ body, html {
         text-shadow: 2px 2px black;
     }
 
+    #text-slogan{
+        font-style: italic;
+        font-size: 1.5em;
+        text-shadow: -1px -1px black;
+        text-shadow: 2px 2px black;
+    }
+
     a, p, h5 {
         color: white;
         text-shadow: 1px 1px black;
@@ -46,4 +53,8 @@ body, html {
 
     #btn-submit {
         padding: 1em;
+    }
+
+    #btn-text{
+        margin: 0;
     }
