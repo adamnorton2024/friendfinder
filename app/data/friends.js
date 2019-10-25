@@ -3,8 +3,8 @@
 
 var friendsArray = [
     {
-        name: "Eden Bond",
-        photo: "https://images.squarespace-cdn.com/content/v1/5a9712e4e17ba3c23a7eaa28/1519865240400-3I2WV33C5ZAWUZQV6MEB/ke17ZwdGBToddI8pDm48kJ9hxOmVac89_BSWidqtaI4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z24Y84JT1lUs7RW7f0QXDhROJYMABIn8547arD2JsWCDJbTvJybZOtvbWRiFosmN10/_DSC6092-Edit.jpg?format=1000w",
+        name: "Keanna Pohl",
+        photo: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/12993524_10154711905065606_5920017858263995177_n.jpg?_nc_cat=110&_nc_oc=AQnenKsrZp3G9J3lC6MBAyAjCgxWrCFVKa8KaL8v4O3XkvovE_0SsisZlkN0AYUkMtY&_nc_ht=scontent-dfw5-1.xx&oh=979a975f02758b853a814ac507e59926&oe=5E1FF8DB",
         scores: [
             5,1,3,4,2,3,4,2,5,1
         ]
@@ -36,6 +36,20 @@ var friendsArray = [
         photo: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/13327569_10207790329211047_3759448462604294491_n.jpg?_nc_cat=105&_nc_oc=AQnTxiCDTJ0Sop-j4obDN89-BxEQYOpzPDE8OCcgPCfdyvkK6bpDdGHK9STJ5D9Q_AQ&_nc_ht=scontent-dfw5-1.xx&oh=b1cfdff11aa7add1487c307248f558ed&oe=5E2007D7",
         scores: [
             5,5,5,4,4,4,3,3,3,2
+        ]
+    },
+    {
+        name: "April Slaughter",
+        photo: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/17458051_10213094443775296_993288755374830140_n.jpg?_nc_cat=107&_nc_oc=AQmmjOdrjxSalHYOx9PcPavGqyYOVvkS787L4HlFHnOBzWk1haj7eeTvDhDx4Gg62dE&_nc_ht=scontent-dfw5-1.xx&oh=1237c15ad03032730d7a6b1f27e2e358&oe=5E58E191",
+        scores: [
+            5, 3, 5, 1, 1, 4, 3, 2, 3, 5
+        ]
+    },
+    {
+        name: "Jake Thompson",
+        photo: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/13626979_10101326799729684_2912824909189112707_n.jpg?_nc_cat=107&_nc_oc=AQm810kIpxJKtJMKnTXHGid8X_khKau-H_2OiDKyRSn0veva2RnFpyqx7cgbBwTtb_w&_nc_ht=scontent-dfw5-1.xx&oh=9a133e7f6902a9a3d7b9140fddefdbb7&oe=5E2876F6",
+        scores: [
+            1, 2, 1, 2, 1, 2, 1, 1, 1, 1
         ]
     },
 
