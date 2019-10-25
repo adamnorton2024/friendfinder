@@ -1,15 +1,23 @@
 {
-  "name": "app",
+  "name": "friendfinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Finally, a way to experience rejection through mathematics!",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamnorton2024/friendfinder.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamnorton2024/friendfinder/issues"
+  },
+  "homepage": "https://github.com/adamnorton2024/friendfinder#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
