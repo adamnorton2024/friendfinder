@@ -1,6 +1,6 @@
 // Load Data
 //===========================================
-var friends = require("../data/friends");
+var friends = require("../data/friends.js");
 
 
 
